@@ -227,7 +227,7 @@ A_TYPE *getTypeOfStructOrEnumRefIdentifier(T_KIND k, char *s, ID_KIND kk) {
 	A_ID *id;
 	id=searchIdentifier(s,current_id);
 	if (id)
-		if(id->kind==k && id->type->kind ==k)
+		if(id->kind==kk && id->type->kind ==k)
 			return (id->type);
 		else
 			syntax_error(11,s);
